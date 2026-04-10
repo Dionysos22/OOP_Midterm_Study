@@ -1,41 +1,61 @@
-## Vize_Calisma
+## OOP Midterm Study (Java)
 
-Bu klasörde Bölüm 2–6 konularını kapsayan örnek Java dosyaları var.
+Bu repo, **Deitel – Java How to Program (Early Objects)** slaytlarıyla paralel şekilde,
+**Bölüm 1–6** konularını küçük, çalıştırılabilir Java örnekleriyle tekrar etmek için hazırlanmıştır.
 
-Ek olarak `ch01/` klasöründe Bölüm 1 (kavramsal) için özet/örnek dosyaları bulunur.
+### İçerik
+- **`ch01/`**: Bölüm 1 (kavramsal özet + “test-drive” örneği)
+- **`ch02/`**: Girdi/çıktı (`println/printf`), `Scanner`, operatörler, karşılaştırmalar (Welcome/Addition/Comparison)
+- **`ch03/`**: Sınıflar-nesneler, instance variables, `set/get`, constructor, `double` balance, primitive vs reference
+- **`ch04/`**: `if/else`, nested if, `while`, sayaç & sentinel kontrollü iterasyon, `++/--`, bileşik atama
+- **`ch05/`**: `for`, `do-while`, `switch`, `break/continue`, mantıksal operatörler, String `switch` case study
+- **`ch06/`**: Metotlar (parametre/return), scope, overloading, `SecureRandom` örnekleri
 
-Ek olarak `ch02/`–`ch06/` alt klasörlerinde, slaytlardaki örneklere daha yakın olacak şekilde
-konular küçük küçük `.java` dosyalarına bölünmüştür.
+> Not: Bazı klasörlerde hem “slayt figürlerine yakın küçük örnekler” hem de “konu toplama” amaçlı
+> `BolumX_*.java` dosyaları bulunabilir.
 
-### Çalıştırma
+### Gereksinimler
+- **Java JDK 8+** (tercihen 11+)
+- Terminalde `javac` ve `java` komutlarının çalışması
 
-Terminalde bu klasöre gel:
-
-```bash
-cd Vize_Calisma
-```
-
-Derle:
+### Derleme
+Repo kök dizininde:
 
 ```bash
 javac ch01/*.java ch02/*.java ch03/*.java ch04/*.java ch05/*.java ch06/*.java
 ```
 
-İstediğini çalıştır (örnek):
+### Çalıştırma
+Paketli örnekler (ör. `package ch02;`) şu şekilde çalışır:
 
 ```bash
-# Default package (package yazmayan) örnekleri:
-java -cp ch02 Bolum2_Temeller
-java -cp ch03 Bolum3_Siniflar
-java -cp ch04 Bolum4_Kontrol1
-java -cp ch05 Bolum5_Kontrol2
-java -cp ch06 Bolum6_Metotlar
-
-# Paketli (package ch02; gibi) örnekler:
 java -cp . ch02.Welcome1
+java -cp . ch02.Addition
+java -cp . ch03.AccountTest
+java -cp . ch06.MaximumFinder
+```
 
-# Chapter 1:
+Chapter 1:
+
+```bash
 java -cp . ch01.Chapter1_Notes
 java -cp . ch01.TestDrive merhaba 123
 ```
 
+Default package olan (package satırı olmayan) `BolumX_*.java` dosyaları klasör içinde durduğu için
+şu şekilde çalıştırılır:
+
+```bash
+java -cp ch02 Bolum2_Temeller
+java -cp ch03 Bolum3_Siniflar
+```
+
+### Katkı
+PR/issue açarak ek örnek önerebilirsin:
+- yeni bir figür örneği
+- daha fazla alıştırma
+- yazım/format düzeltmeleri
+
+### Lisans
+Bu repo **ders çalışması** amaçlıdır. Slayt/kitap içeriğini birebir kopyalamak yerine,
+örnekler **kavramları gösterecek şekilde** yeniden yazılmıştır.
