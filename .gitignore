@@ -1,6 +1,5 @@
 .DS_Store
 **/.DS_Store
 
-# If you only want to push sources, uncomment:
-# *.class
+*.class
 
