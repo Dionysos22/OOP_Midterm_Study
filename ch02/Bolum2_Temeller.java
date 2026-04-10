@@ -79,19 +79,30 @@ public class Bolum2_Temeller {
         System.out.print("[2.5] Iki tam sayi gir (ornegin: 3 5): ");
         Scanner sc = new Scanner(System.in);
 
+        // hasNextInt(): Bir SONRAKİ token'ın (boşlukla ayrılmış parça) int olup olmadığını kontrol eder.
+        // Bu kontrolü yapmadan nextInt() çağırırsak ve kullanıcı "x" gibi bir şey girerse program hata fırlatır.
         if (sc.hasNextInt()) {
+            // İlk sayı gerçekten int ise güvenle okuyabiliriz.
             int a = sc.nextInt();
+
+            // Aynı kontrolü ikinci sayı için tekrar yapıyoruz.
+            // Çünkü kullanıcı tek sayı girmiş olabilir ya da ikinci token int olmayabilir.
             if (sc.hasNextInt()) {
+                // İkinci sayı da int ise okuyup topluyoruz.
                 int b = sc.nextInt();
                 int toplam = a + b;
                 System.out.println("Toplam = " + toplam);
             } else {
+                // Buraya düşmek: İlk sayı okundu ama ikinci int yok (ya hiç yok ya da int değil).
                 System.out.println("Ikinci sayi yok, ornek atlandi.");
             }
         } else {
+            // Buraya düşmek: Daha ilk token int değilse hiç okumaya çalışmadan örneği pas geçiyoruz.
             System.out.println("Girdi bulunamadi, ornek atlandi.");
         }
-        // sc.close(); // Aynı JVM içinde başka Scanner kullanımlarını bozmasın diye kapatmıyoruz.
+        // sc.close();
+        // Not: sc System.in'i de kapatır. Aynı JVM içinde ileride tekrar input okunacaksa sorun çıkarabilir.
+        // Bu dosyada birden fazla örnek/metot aynı çalıştırmada çağrılabildiği için burada özellikle kapatmıyoruz.
     }
 
     // 2.6 Memory Concepts
