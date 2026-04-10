@@ -2,6 +2,10 @@ package ch05;
 
 /**
  * AutoPolicy test: String switch kullanımını gösterir.
+ *
+ * Amaç:
+ * - Aynı sınıftan iki farklı nesne üret
+ * - Her birinin state değerine göre "no-fault" durumunun değiştiğini gör
  */
 public class AutoPolicyTest {
     public static void main(String[] args) {

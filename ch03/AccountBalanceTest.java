@@ -2,6 +2,11 @@ package ch03;
 
 /**
  * Balance örneği: double ile bakiye, deposit/withdraw.
+ *
+ * Not:
+ * - Bu seviye için `double` pratik; gerçek para uygulamalarında yuvarlama/temsil hataları nedeniyle
+ *   çoğu zaman `BigDecimal` tercih edilir.
+ * - Negatif başlangıç bakiyesi örneği, constructor içinde yapılan basit doğrulamanın etkisini gösterir.
  */
 public class AccountBalanceTest {
     public static void main(String[] args) {

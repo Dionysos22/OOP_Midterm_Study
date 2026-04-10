@@ -2,6 +2,12 @@ package ch04;
 
 /**
  * ++ ve -- operatörleri: prefix vs postfix.
+ *
+ * Bu örnek iki şeyi aynı anda gösterir:
+ * - **Prefix** (`++i`, `--i`): değişken önce güncellenir, sonra ifade içinde kullanılır.
+ * - **Postfix** (`i++`, `i--`): değişken önce ifade içinde kullanılır, sonra güncellenir.
+ *
+ * Ayrıca bileşik atama operatörlerine (`+=`, `*=`, ...) küçük bir örnek içerir.
  */
 public class IncrementDecrementDemo {
     public static void main(String[] args) {

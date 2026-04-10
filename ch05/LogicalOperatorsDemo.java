@@ -2,6 +2,12 @@ package ch05;
 
 /**
  * Mantıksal operatörler ve short-circuit davranışı.
+ *
+ * Short-circuit (kısa devre) kuralı:
+ * - `A && B` ifadesinde A false ise B çalıştırılmaz.
+ * - `A || B` ifadesinde A true ise B çalıştırılmaz.
+ *
+ * Bu davranış, bazı durumlarda hatayı önler (ör. 0'a bölme) ve performans sağlar.
  */
 public class LogicalOperatorsDemo {
     public static void main(String[] args) {

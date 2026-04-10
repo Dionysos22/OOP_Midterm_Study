@@ -4,6 +4,11 @@ package ch03;
  * 3.5 Primitive Types vs. Reference Types
  *
  * Konu: primitive değer kopyası, referans adres kopyası.
+ *
+ * Bu dosyada 3 ayrı karşılaştırma var:
+ * - `int` gibi primitive tiplerde atama: değer kopyalanır (a değişmez, b değişir).
+ * - `Account` gibi nesnelerde atama: referans kopyalanır (x ve y aynı nesneyi gösterir).
+ * - `String` karşılaştırması: `==` referans, `equals()` içerik karşılaştırır.
  */
 public class PrimitiveVsReferenceDemo {
     public static void main(String[] args) {

@@ -2,6 +2,10 @@ package ch03;
 
 /**
  * Constructor örneği: nesneleri ilk değerlerle başlatmak.
+ *
+ * Buradaki amaç:
+ * - `new Account("Jane Green")` gibi bir çağrıda, nesnenin adı daha baştan doğru gelsin.
+ * - Aynı sınıftan birden fazla nesne üretilebildiğini ve her birinin kendi state'ine sahip olduğunu görmek.
  */
 public class AccountConstructorTest {
     public static void main(String[] args) {

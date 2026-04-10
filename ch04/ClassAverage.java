@@ -8,6 +8,11 @@ import java.util.Scanner;
  * Fikir:
  * - kaç tane not gireceğimiz belli (ör: 3 tane)
  * - sayaç ile döngü kurulur
+ *
+ * Buradaki tipik adımlar:
+ * - total (toplam) biriktir
+ * - gradeCounter ile kaç tane not okunduğunu takip et
+ * - en sonda average = total / numberOfGrades
  */
 public class ClassAverage {
     public static void main(String[] args) {

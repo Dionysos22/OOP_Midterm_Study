@@ -2,6 +2,14 @@ package ch05;
 
 /**
  * continue ve break örnekleri.
+ *
+ * Kısa özet:
+ * - `continue`: döngünün o turunu erken bitirir, bir sonraki iterasyona geçer.
+ * - `break`: en yakın döngüyü tamamen sonlandırır.
+ *
+ * Bu örnekte:
+ * - continue ile tek sayıları atlayıp sadece çiftleri yazdırıyoruz
+ * - break ile belli bir değerde (4) döngüyü durduruyoruz
  */
 public class ContinueTest {
     public static void main(String[] args) {

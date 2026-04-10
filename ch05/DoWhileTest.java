@@ -2,6 +2,10 @@ package ch05;
 
 /**
  * do-while: gövde en az 1 kez çalışır, koşul sonda kontrol edilir.
+ *
+ * Ne zaman işe yarar?
+ * - Kullanıcıdan en az bir kez input almak gerekir (menü döngüsü gibi)
+ * - Koşulu ancak gövde çalıştıktan sonra hesaplayabiliyorsan
  */
 public class DoWhileTest {
     public static void main(String[] args) {

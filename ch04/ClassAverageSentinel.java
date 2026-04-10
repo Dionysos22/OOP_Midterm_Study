@@ -11,6 +11,7 @@ import java.util.Scanner;
  *
  * Önemli nokta:
  * - "sentinel" değeri (burada -1) gerçek verilerle karışmamalı
+ * - Döngü bittiğinde gradeCounter=0 olabilir; bu durumda ortalama hesaplanmaz (0'a bölme hatası önlenir)
  */
 public class ClassAverageSentinel {
     public static void main(String[] args) {

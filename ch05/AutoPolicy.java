@@ -4,6 +4,10 @@ package ch05;
  * Case study fikri: AutoPolicy (String verisiyle çalışma + switch).
  *
  * Bu, "nesne durumunu" (policyNumber, state) tutan basit bir sınıf.
+ *
+ * Buradaki `isNoFaultState()` metodu, String ile switch kullanımını pratik eder:
+ * - Belirli eyalet kodları için true döner
+ * - Diğer tüm değerlerde false döner
  */
 public class AutoPolicy {
     private final int accountNumber;

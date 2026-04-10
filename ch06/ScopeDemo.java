@@ -2,6 +2,12 @@ package ch06;
 
 /**
  * Scope (kapsam) örneği: aynı isim farklı bloklarda.
+ *
+ * Kapsam (scope) = bir değişkene nereden erişebildiğimiz.
+ * - Dış blokta tanımlanan değişkenler, iç bloklardan görülebilir.
+ * - İç blokta tanımlanan değişkenler (ör. if bloğundaki `y`), blok bitince yok olur.
+ *
+ * Bu örnek özellikle "y neden burada görünmüyor?" sorusuna cevap vermek için var.
  */
 public class ScopeDemo {
     public static void main(String[] args) {
